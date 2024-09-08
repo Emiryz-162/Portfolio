@@ -1,0 +1,387 @@
+@font-face {
+    font-family: 'Upmenu';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+    font-weight:200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'content';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Emir';
+    src: url(Fonts/GravitasOne-Regular.ttf);
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hello';
+    src: url(Fonts/Gelasio-VariableFont_wght.ttf);
+    font-weight:400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+.corner-shape {
+    position: absolute; 
+    width: 10vw; 
+    height: 10vw;
+    background-color: #D32F2F; 
+    clip-path: polygon(92% 0, 91% 37%, 46% 75%, 0 81%, 0 0);
+    margin-top: -3vw;
+    transition: witdh 100ms ease;
+    transition: height 100ms ease;
+}
+
+.corner-shape:hover
+{
+    width: 10.5vw;
+    height: 10.5vw;
+
+    transition: witdh 100ms ease;
+    transition: height 100ms ease;
+}
+
+.Upmenu
+{
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 3vw;
+}
+
+.upmenuButtons a
+{   
+    margin-left: 2vw;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2vw;
+    font-family: 'Upmenu';
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.upmenuButtons a:hover
+{
+    text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.281);
+    transition: text-shadow 0.3s ease;
+}
+
+.upmenuButtons
+{
+    margin-left: 2vw;
+    display:flex;
+}
+
+.UpmenuLine
+{
+    background-color: black;
+    height: 0.01vw;
+    width: 20vw;
+}
+
+.Upmenu img
+{
+    height: 25vw;
+    width: auto;
+    margin-top: 8vw;
+    margin-left: -3vw;
+    transition: margin-left 0.3s ease;
+}
+
+.Upmenu img:hover
+{
+    margin-left: 0.01vw;
+    transition: margin-left 0.3s ease;
+}
+
+.Hello
+{
+    position: absolute;
+    margin-top: 16vw;
+    margin-left: 15vw;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.Hello h5
+{
+    font-family: 'Hello';
+    font-size: 3vw;
+    transition: margin-left 0.3s ease;
+    width: 14vw;
+}
+
+.Hello h5:hover
+{
+    margin-left: 0.5vw;
+    transition: margin-left 0.3s ease;
+}
+
+.Hello h1
+{
+    font-family: 'Emir';
+    color: rgb(211, 47, 47);
+    font-size: 6vw;
+    width: 22vw;
+    transition: margin-left 0.3s ease;
+}
+
+.Hello h1:hover
+{
+    margin-left: 0.5vw;
+    transition: margin-left 0.3s ease;
+}
+
+.Hello p
+{
+    color: rgb(90, 90, 90);
+    transition: color 0.3s ease;
+    font-family: 'content';
+    margin-top: 1vw;
+    width: 32vw;
+    font-size: 1.4vw;
+}
+
+.Hello p:hover
+{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.HelloLine
+{
+    background-color: black;
+    height: 0.1vw;
+    width: 26vw;
+}
+
+.upmenuicon
+{
+    cursor: pointer;
+    margin-top: 1.2vw;
+    color: #d32f2f;
+    margin-top: 2vw;
+    transition: color, box-shadow 0.3s;
+    margin-right: 2.5vw;
+}
+.upmenuicon:hover
+{
+    color: #f03c3c;
+    box-shadow:0vw 0.8vw 0.5vw #000000;
+    transition: color, box-shadow 0.3s;
+}
+.ok
+{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: 47vw;
+    height: auto;
+}
+
+
+.mainLine
+{
+    background-color: black;
+    height: 0.1vw;
+    width: 85vw;
+    margin-left: 7.5vw;
+    position: absolute;
+    margin-top: 48.5vw;
+}
+
+.About
+{
+    position: absolute;
+    margin-top: 55vw;
+    border-color: #D32F2F;
+    border-radius: 2vw;
+    border-style: solid;
+    width: 85vw;
+    margin-left: 7.5vw;
+    display: flex;
+    scroll-behavior: smooth;
+    margin-bottom: 6vw;
+}
+
+body
+{
+    height: 115vw;
+}
+
+.AboutRed
+{
+    background-color: #D32F2F;
+    width: 35vw;
+    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 1.7vw 0vw 0vw 1.7vw;
+    transition:color 0.3s, background-color 0.3s;
+}
+
+.AboutRed h2
+{
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.About img
+{
+    width: 2vw;
+    height: 2vw;
+    margin-bottom: -0.5vw;
+    margin-left: 0.2vw;
+    user-select: none;
+}
+
+h2
+{
+    font-family: 'Hello';
+    font-size: 2vw;
+    user-select: none;
+}
+
+.About p, li, a
+{
+    font-family: 'content';
+    font-size: 1vw;
+    user-select: none;
+}
+
+
+.plus
+{
+    margin-top: 2vw;
+    line-height: 1.8vw;
+}
+
+.edu
+{
+    margin-top: 1vw;
+}
+
+.AboutWhite
+{
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 5vw;
+    width: 35vw;
+    padding-right: 5vw;
+    border-radius: 0vw 1.7vw 1.7vw 0vw;
+    transition:color 0.3s, background-color 0.3s;
+}
+
+.AboutWhite h2
+{
+    margin-top: 2vw;
+}
+
+.SkillList
+{
+    display: flex;
+    column-gap: 8vw;
+}
+
+.SkillList li
+{
+    margin-top: 2vw;
+}
+
+.mar
+{
+    margin-bottom: 4.5vw;
+}
+
+.language
+{
+    margin-bottom: 4vw;
+}
+
+.lan
+{
+    margin-top: 1vw;
+}
+
+.experience
+{
+    margin-top: 6vw;
+    padding-bottom: 3vw;
+}
+
+.contact
+{
+    margin-top: 5vw;
+}
+
+.contact p
+{
+    margin-top: 2vw;
+}
+
+.contact a
+{
+    color: #000000;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.contact img
+{
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+}
+
+.icon
+{
+    color: white;
+    margin-left: 0.7vw;
+}
+
+.icons
+{
+    color: #000000;
+    margin-left: 0.7vw;
+    margin-right: 1vw;
+}
+
+/*Animations*/
+
+.About:hover .AboutRed {
+    color: black;
+    background-color: white;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .About:hover .AboutWhite {
+    color: #ffffff;
+    background-color: #D32F2F;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .About:hover a
+  {
+    color:white;
+    transition: color 0.3s; 
+  }
+
+  .About:hover .icon {
+    color: #000000;
+    transition: color 0.3s;
+  }
+
+  .About:hover .icons {
+    color: white;
+    transition: color 0.3s;
+  }
+
+

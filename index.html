@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Hello I am Emir</title>
+</head>
+<body>
+    
+    <div class="corner-shape top-left"></div>
+
+    <div class="Hello">
+        <h5>Hello I am</h5>
+        <h1>Emir</h1>
+        <div class="HelloLine"></div>
+        <p>I am a sofware developer who improves myself in web design and software.</p>
+        <a href="https://github.com/Emiryz-162"><i class="fa-brands fa-square-git fa-2xl upmenuicon"></i></a>
+        <a href="https://www.linkedin.com/in/emir-y/"><i class="fa-brands fa-linkedin fa-2xl upmenuicon"></i></a>
+        <a href="mailto:yz.emir@hotmail.com"><i class="fa-solid fa-envelope fa-2xl upmenuicon"></i></a>
+        <div class="icons">
+            
+        </div>
+    </div>
+
+    <div class="Upmenu">
+        <div class="upmenuButtons">
+            <a href="#"><b>Home</b></a>
+            <a href="#about" class="aboutButton"><b>About</b></a>
+            <a href="#contact" class="contactButton"><b>Contact</b></a>
+        </div>  
+        <div class="UpmenuLine"></div>
+        <img src="Images/PP.png" alt="Helloo">
+    </div>
+
+    <i class="fa-solid fa-arrow-down fa-bounce fa-2xl ok" style="color: #000000;"></i>
+
+    <div class="mainLine"></div>
+
+    <div class="About" id="about">
+        <div class="AboutRed">
+            <h2>About Me</h2>
+            <p class="plus">I am interested in web and graphic design, with skills in HTML, CSS, JavaScript, UI/UX, and graphic design.</p>
+            <p class="plus">I graduated in Computer Programming from Istanbul Okan University and am currently pursuing an open education degree in Graphic Design at Istanbul University.</p>
+            <p class="mar plus">During my internship as an IT technician in 2021, I had the opportunity to gain knowledge in C#, SQL, and cybersecurity. I am eager to develop creative solutions and design user-focused experiences.</p>
+            
+            <h2>Education <i class="fa-solid fa-graduation-cap icon"></i></h2>
+            <p class="edu"><b>Okan University -</b> Computer Programming</p>
+            <p class="edu"><b>Istanbul University -</b> Graphic Design</p>
+
+            <div class="experience">
+                <h2>Experience <i class="fa-solid fa-briefcase icon"></i></h2>
+                <p><b>Egebant - </b>IT Technician</p>
+            </div>
+        </div>
+        
+        <div class="AboutWhite">
+            <h2>Skills</h2>
+            <div class="SkillList">
+                <div>
+                    <li>Web Design</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li class="mar">UI/UX</li>
+                </div>
+                <div>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li>Project Management</li>
+                    <li>Computer Hardware</li>
+                </div>
+            </div>
+
+            <h2 class="Language">Languages <i class="fa-solid fa-language icons"></i></h2>
+            <li class="lan"><b>English - </b>Professional Working Proficiency
+            </li>
+            <li class="lan"><b>Turkish - </b> Native Languages</li>
+
+            <div class="contact" id="contact">
+                <h2>Contact <i class="fa-solid fa-phone icons"></i></h2>
+                <p><i class="fa-regular fa-envelope icons fa-xl"></i><a href="mailto:yz.emir@hotmail.com"><b>emiryz162@gmail.com</b></a></p>
+                <p><i class="fa-brands fa-github icons  fa-xl"></i><a href="https://github.com/Emiryz-162"><b>github.com/Emiryz-162</b></a></p>
+                <p><i class="fa-brands fa-linkedin icons  fa-xl"></i><a href="https://www.linkedin.com/in/emir-y/"><b>emir-y</b></a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.aboutButton').addEventListener('click', function(e) {
+            e.preventDefault(); // Varsayılan link davranışını engeller
+            const targetSection = document.querySelector('.About'); // Hedef bölümü seçer
+            if (targetSection) {
+                targetSection.scrollIntoView({ 
+                    behavior: 'smooth',  // Yumuşak kaydırma efekti
+                    block: 'start'       // Hedef bölümü sayfanın üstüne hizalar
+                });
+            }
+        });
+
+        document.querySelector('.contactButton').addEventListener('click', function(e) {
+            e.preventDefault(); // Varsayılan link davranışını engeller
+            const targetSection = document.querySelector('.contact'); // Hedef bölümü seçer
+            if (targetSection) {
+                targetSection.scrollIntoView({ 
+                    behavior: 'smooth',  // Yumuşak kaydırma efekti
+                    block: 'start'       // Hedef bölümü sayfanın üstüne hizalar
+                });
+            }
+        });
+
+        
+    </script>
+</body>
+</html>
+
